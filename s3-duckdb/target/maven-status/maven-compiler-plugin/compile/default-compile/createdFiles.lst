@@ -1,9 +1,0 @@
-com/example/s3duckdb/service/DuckDbQueryService.class
-com/example/s3duckdb/model/ColumnInfo.class
-com/example/s3duckdb/service/S3Service.class
-com/example/s3duckdb/config/DuckDbConfig.class
-com/example/s3duckdb/S3DuckDbApplication.class
-com/example/s3duckdb/controller/QueryController.class
-com/example/s3duckdb/config/SeaweedFsConfig.class
-com/example/s3duckdb/model/QueryRequest.class
-com/example/s3duckdb/model/QueryResponse.class

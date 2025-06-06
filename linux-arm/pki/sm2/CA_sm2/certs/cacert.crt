@@ -1,0 +1,50 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: SM2-with-SM3
+        Issuer: C=CN, ST=Zhejiang, O=Nuowei, OU=Certificate Authority, CN=ca.nuowei.com/emailAddress=ca@nuowei.com
+        Validity
+            Not Before: Apr 23 07:56:36 2025 GMT
+            Not After : May  8 07:56:36 2129 GMT
+        Subject: C=CN, ST=Zhejiang, O=Nuowei, OU=Certificate Authority, CN=ca.nuowei.com/emailAddress=ca@nuowei.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0e:e9:ba:bc:71:6e:60:59:7c:15:0c:1c:bc:2e:
+                    19:cd:1b:fa:da:91:35:33:8d:b4:11:77:e2:47:38:
+                    34:16:8c:f0:59:7d:49:ad:0c:20:55:69:84:95:f6:
+                    22:df:c2:03:ec:ab:9e:43:33:28:2e:04:cb:10:a3:
+                    86:a8:ec:d1:a2
+                ASN1 OID: SM2
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                0E:A8:FE:F5:57:6C:45:4A:99:C5:B7:A3:A0:9A:BC:02:4F:68:8E:3F
+            X509v3 Authority Key Identifier: 
+                keyid:0E:A8:FE:F5:57:6C:45:4A:99:C5:B7:A3:A0:9A:BC:02:4F:68:8E:3F
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+    Signature Algorithm: SM2-with-SM3
+         30:46:02:21:00:c2:91:74:20:a3:08:88:4f:6c:9e:a2:e7:b1:
+         41:d7:80:08:cb:f6:c1:e6:44:eb:37:04:5d:ff:e6:4d:20:c2:
+         58:02:21:00:f4:c7:ad:f2:73:d7:a2:53:26:a4:ee:c8:1d:f5:
+         b3:42:cc:9b:fc:41:32:7c:9d:d2:5f:fd:29:a2:82:0c:c4:01
+-----BEGIN CERTIFICATE-----
+MIICZTCCAgqgAwIBAgIBATAKBggqgRzPVQGDdTCBhzELMAkGA1UEBhMCQ04xETAP
+BgNVBAgMCFpoZWppYW5nMQ8wDQYDVQQKDAZOdW93ZWkxHjAcBgNVBAsMFUNlcnRp
+ZmljYXRlIEF1dGhvcml0eTEWMBQGA1UEAwwNY2EubnVvd2VpLmNvbTEcMBoGCSqG
+SIb3DQEJARYNY2FAbnVvd2VpLmNvbTAgFw0yNTA0MjMwNzU2MzZaGA8yMTI5MDUw
+ODA3NTYzNlowgYcxCzAJBgNVBAYTAkNOMREwDwYDVQQIDAhaaGVqaWFuZzEPMA0G
+A1UECgwGTnVvd2VpMR4wHAYDVQQLDBVDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxFjAU
+BgNVBAMMDWNhLm51b3dlaS5jb20xHDAaBgkqhkiG9w0BCQEWDWNhQG51b3dlaS5j
+b20wWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAQO6bq8cW5gWXwVDBy8LhnNG/ra
+kTUzjbQRd+JHODQWjPBZfUmtDCBVaYSV9iLfwgPsq55DMyguBMsQo4ao7NGio2Mw
+YTAdBgNVHQ4EFgQUDqj+9VdsRUqZxbejoJq8Ak9ojj8wHwYDVR0jBBgwFoAUDqj+
+9VdsRUqZxbejoJq8Ak9ojj8wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC
+AYYwCgYIKoEcz1UBg3UDSQAwRgIhAMKRdCCjCIhPbJ6i57FB14AIy/bB5kTrNwRd
+/+ZNIMJYAiEA9Met8nPXolMmpO7IHfWzQsyb/EEyfJ3SX/0pooIMxAE=
+-----END CERTIFICATE-----

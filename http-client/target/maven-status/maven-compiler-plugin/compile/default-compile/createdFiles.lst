@@ -1,0 +1,13 @@
+com/example/httpclient/dto/HttpResponse.class
+META-INF/spring-configuration-metadata.json
+com/example/httpclient/service/HttpClientService.class
+com/example/httpclient/dto/HttpRequest$HttpMethod.class
+com/example/httpclient/HttpClientApplication.class
+com/example/httpclient/service/FileTransferService.class
+com/example/httpclient/service/HttpClientService$1.class
+com/example/httpclient/config/HttpClientConfig$1.class
+com/example/httpclient/dto/FileUploadRequest.class
+com/example/httpclient/config/HttpClientConfig$2.class
+com/example/httpclient/dto/HttpRequest.class
+com/example/httpclient/controller/HttpClientController.class
+com/example/httpclient/config/HttpClientConfig.class

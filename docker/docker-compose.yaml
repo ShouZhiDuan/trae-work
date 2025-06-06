@@ -1,0 +1,11 @@
+version: "2"
+services:
+  baize-military:
+    image: 192.168.50.32/baize/military:1.0.0-bookworm
+    container_name: baize-military
+    ports:
+      - 32010:32010
+    network_mode: "bridge"
+    restart: always
+    environment:
+      TZ: Asia/Shanghai

@@ -1,0 +1,307 @@
+{
+  "examples": {
+    "basic_get_request": {
+      "description": "基础GET请求示例",
+      "method": "GET",
+      "url": "http://localhost:8080/api/http-client/get",
+      "params": {
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      }
+    },
+    
+    "basic_post_request": {
+      "description": "基础POST请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/post",
+      "params": {
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      },
+      "body": {
+        "title": "测试标题",
+        "body": "测试内容",
+        "userId": 1
+      }
+    },
+    
+    "custom_http_request": {
+      "description": "自定义HTTP请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://httpbin.org/post",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer your-token-here",
+          "X-Custom-Header": "custom-value"
+        },
+        "queryParams": {
+          "page": 1,
+          "size": 10,
+          "sort": "created_at"
+        },
+        "body": {
+          "name": "测试用户",
+          "email": "test@example.com",
+          "age": 25
+        },
+        "contentType": "application/json",
+        "timeout": 30,
+        "followRedirects": true
+      }
+    },
+    
+    "async_request": {
+      "description": "异步HTTP请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request/async",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://httpbin.org/delay/2",
+        "method": "GET",
+        "timeout": 10
+      }
+    },
+    
+    "reactive_request": {
+      "description": "响应式HTTP请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request/reactive",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://jsonplaceholder.typicode.com/users",
+        "method": "GET",
+        "headers": {
+          "Accept": "application/json"
+        }
+      }
+    },
+    
+    "file_upload": {
+      "description": "文件上传示例（需要使用multipart/form-data）",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/upload",
+      "note": "使用curl命令: curl -X POST -F 'file=@/path/to/your/file.txt' -F 'url=https://httpbin.org/post' http://localhost:8080/api/http-client/upload"
+    },
+    
+    "async_file_upload": {
+      "description": "异步文件上传示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/upload/async",
+      "note": "使用curl命令: curl -X POST -F 'file=@/path/to/your/file.txt' -F 'url=https://httpbin.org/post' http://localhost:8080/api/http-client/upload/async"
+    },
+    
+    "file_download": {
+      "description": "文件下载示例",
+      "method": "GET",
+      "url": "http://localhost:8080/api/http-client/download",
+      "params": {
+        "url": "https://httpbin.org/json",
+        "savePath": "/tmp/downloaded-file.json"
+      }
+    },
+    
+    "async_file_download": {
+      "description": "异步文件下载示例",
+      "method": "GET",
+      "url": "http://localhost:8080/api/http-client/download/async",
+      "params": {
+        "url": "https://httpbin.org/json",
+        "savePath": "/tmp/async-downloaded-file.json"
+      }
+    },
+    
+    "download_to_bytes": {
+      "description": "下载文件到字节数组示例",
+      "method": "GET",
+      "url": "http://localhost:8080/api/http-client/download/bytes",
+      "params": {
+        "url": "https://httpbin.org/json"
+      }
+    },
+    
+    "put_request": {
+      "description": "PUT请求示例",
+      "method": "PUT",
+      "url": "http://localhost:8080/api/http-client/put",
+      "params": {
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      },
+      "body": {
+        "id": 1,
+        "title": "更新的标题",
+        "body": "更新的内容",
+        "userId": 1
+      }
+    },
+    
+    "delete_request": {
+      "description": "DELETE请求示例",
+      "method": "DELETE",
+      "url": "http://localhost:8080/api/http-client/delete",
+      "params": {
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      }
+    },
+    
+    "request_with_auth": {
+      "description": "带认证的请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://httpbin.org/bearer",
+        "method": "GET",
+        "headers": {
+          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        }
+      }
+    },
+    
+    "form_data_request": {
+      "description": "表单数据请求示例",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://httpbin.org/post",
+        "method": "POST",
+        "contentType": "application/x-www-form-urlencoded",
+        "body": {
+          "username": "testuser",
+          "password": "testpass",
+          "remember": "true"
+        }
+      }
+    },
+    
+    "health_check": {
+      "description": "健康检查示例",
+      "method": "GET",
+      "url": "http://localhost:8080/api/http-client/health"
+    },
+    
+    "https_request_with_ssl_bypass": {
+      "description": "HTTPS请求示例（开发环境SSL绕过）",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://self-signed.badssl.com/",
+        "method": "GET",
+        "headers": {
+          "User-Agent": "HTTP-Client-Tool/1.0"
+        }
+      },
+      "note": "此示例需要在开发环境配置中启用skip-ssl-verification: true"
+    },
+    
+    "https_request_secure": {
+      "description": "安全HTTPS请求示例（生产环境）",
+      "method": "POST",
+      "url": "http://localhost:8080/api/http-client/request",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "url": "https://httpbin.org/get",
+        "method": "GET",
+        "headers": {
+          "User-Agent": "HTTP-Client-Tool/1.0",
+          "Accept": "application/json"
+        }
+      },
+      "note": "此示例使用有效的SSL证书，适用于生产环境"
+    }
+  },
+  
+  "curl_examples": {
+    "basic_get": "curl -X GET 'http://localhost:8080/api/http-client/get?url=https://jsonplaceholder.typicode.com/posts/1'",
+    
+    "basic_post": "curl -X POST 'http://localhost:8080/api/http-client/post?url=https://jsonplaceholder.typicode.com/posts' -H 'Content-Type: application/json' -d '{\"title\": \"测试标题\", \"body\": \"测试内容\", \"userId\": 1}'",
+    
+    "custom_request": "curl -X POST 'http://localhost:8080/api/http-client/request' -H 'Content-Type: application/json' -d '{\"url\": \"https://httpbin.org/post\", \"method\": \"POST\", \"headers\": {\"Authorization\": \"Bearer token\"}, \"body\": {\"key\": \"value\"}}'",
+    
+    "file_upload": "curl -X POST -F 'file=@/path/to/file.txt' -F 'url=https://httpbin.org/post' 'http://localhost:8080/api/http-client/upload'",
+    
+    "file_download": "curl -X GET 'http://localhost:8080/api/http-client/download?url=https://httpbin.org/json&savePath=/tmp/downloaded.json'",
+    
+    "health_check": "curl -X GET 'http://localhost:8080/api/http-client/health'"
+  },
+  
+  "test_scenarios": {
+    "performance_test": {
+      "description": "性能测试场景",
+      "steps": [
+        "1. 启动应用",
+        "2. 使用ab或wrk工具进行压力测试",
+        "3. 监控响应时间和吞吐量",
+        "4. 调整连接池配置优化性能"
+      ],
+      "command": "ab -n 1000 -c 10 'http://localhost:8080/api/http-client/get?url=https://httpbin.org/json'"
+    },
+    
+    "large_file_test": {
+      "description": "大文件传输测试",
+      "steps": [
+        "1. 准备大文件（>100MB）",
+        "2. 测试文件上传功能",
+        "3. 测试文件下载功能",
+        "4. 验证文件完整性"
+      ]
+    },
+    
+    "concurrent_test": {
+      "description": "并发请求测试",
+      "steps": [
+        "1. 同时发起多个HTTP请求",
+        "2. 验证连接池工作正常",
+        "3. 检查响应时间和成功率",
+        "4. 监控系统资源使用"
+      ]
+    },
+    
+    "ssl_configuration_test": {
+      "description": "SSL配置测试场景",
+      "steps": [
+        "1. 测试有效HTTPS证书的网站（如https://httpbin.org）",
+        "2. 测试自签名证书的网站（需要开发环境配置）",
+        "3. 测试过期证书的网站（验证错误处理）",
+        "4. 验证不同SSL协议版本的兼容性"
+      ],
+      "test_urls": {
+        "valid_ssl": "https://httpbin.org/get",
+        "self_signed": "https://self-signed.badssl.com/",
+        "expired": "https://expired.badssl.com/",
+        "wrong_host": "https://wrong.host.badssl.com/"
+      }
+    },
+    
+    "environment_switch_test": {
+      "description": "环境切换测试",
+      "steps": [
+        "1. 使用默认配置启动应用",
+        "2. 使用开发环境配置启动：--spring.profiles.active=dev",
+        "3. 使用生产环境配置启动：--spring.profiles.active=prod",
+        "4. 验证SSL配置在不同环境下的行为"
+      ],
+      "commands": {
+        "default": "mvn spring-boot:run",
+        "dev": "mvn spring-boot:run -Dspring-boot.run.profiles=dev",
+        "prod": "mvn spring-boot:run -Dspring-boot.run.profiles=prod"
+      }
+    }
+  }
+}

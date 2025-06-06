@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 文件管理系统</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .upload-section {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="file"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+        .btn-success {
+            background-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+        }
+        .message {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .file-list {
+            margin-top: 20px;
+        }
+        .file-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .file-name {
+            font-weight: bold;
+            color: #333;
+        }
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗂️ S3 文件管理系统</h1>
+        
+        <!-- 文件上传区域 -->
+        <div class="upload-section">
+            <h2>📤 文件上传</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="fileInput">选择文件:</label>
+                    <input type="file" id="fileInput" name="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="keyNameInput">文件名 (可选):</label>
+                    <input type="text" id="keyNameInput" name="keyName" placeholder="留空将自动生成文件名">
+                </div>
+                <button type="submit">上传文件</button>
+            </form>
+        </div>
+        
+        <!-- 消息显示区域 -->
+        <div id="message"></div>
+        
+        <!-- 加载动画 -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>处理中...</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- 文件列表区域 -->
+        <div class="file-list">
+            <h2>📁 文件列表</h2>
+            <button onclick="loadFileList()" class="btn-success">刷新列表</button>
+            <div id="fileList"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = '/api/s3';
+        
+        // 显示消息
+        function showMessage(message, type = 'success') {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = `<div class="message ${type}">${message}</div>`;
+            setTimeout(() => {
+                messageDiv.innerHTML = '';
+            }, 5000);
+        }
+        
+        // 显示/隐藏加载动画
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+        
+        // 文件上传
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('fileInput');
+            const keyNameInput = document.getElementById('keyNameInput');
+            
+            if (!fileInput.files[0]) {
+                showMessage('请选择要上传的文件', 'error');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            if (keyNameInput.value.trim()) {
+                formData.append('keyName', keyNameInput.value.trim());
+            }
+            
+            showLoading(true);
+            
+            try {
+                const response = await fetch(`${API_BASE}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showMessage(`文件上传成功！<br>文件URL: <a href="${result.fileUrl}" target="_blank">${result.fileUrl}</a>`);
+                    fileInput.value = '';
+                    keyNameInput.value = '';
+                    loadFileList();
+                } else {
+                    showMessage(result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('上传失败: ' + error.message, 'error');
+            } finally {
+                showLoading(false);
+            }
+        });
+        
+        // 加载文件列表
+        async function loadFileList() {
+            showLoading(true);
+            
+            try {
+                const response = await fetch(`${API_BASE}/files`);
+                const result = await response.json();
+                
+                const fileListDiv = document.getElementById('fileList');
+                
+                if (result.success && result.files.length > 0) {
+                    fileListDiv.innerHTML = result.files.map(fileName => `
+                        <div class="file-item">
+                            <span class="file-name">${fileName}</span>
+                            <div class="file-actions">
+                                <button onclick="downloadFile('${fileName}')" class="btn-success">下载</button>
+                                <button onclick="deleteFile('${fileName}')" class="btn-danger">删除</button>
+                            </div>
+                        </div>
+                    `).join('');
+                } else if (result.success) {
+                    fileListDiv.innerHTML = '<p>暂无文件</p>';
+                } else {
+                    fileListDiv.innerHTML = '<p class="error">加载文件列表失败</p>';
+                }
+            } catch (error) {
+                document.getElementById('fileList').innerHTML = '<p class="error">加载文件列表失败: ' + error.message + '</p>';
+            } finally {
+                showLoading(false);
+            }
+        }
+        
+        // 下载文件
+        async function downloadFile(fileName) {
+            try {
+                const response = await fetch(`${API_BASE}/download/${encodeURIComponent(fileName)}`);
+                
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = fileName;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+                    showMessage('文件下载成功');
+                } else {
+                    showMessage('文件下载失败', 'error');
+                }
+            } catch (error) {
+                showMessage('下载失败: ' + error.message, 'error');
+            }
+        }
+        
+        // 删除文件
+        async function deleteFile(fileName) {
+            if (!confirm(`确定要删除文件 "${fileName}" 吗？`)) {
+                return;
+            }
+            
+            showLoading(true);
+            
+            try {
+                const response = await fetch(`${API_BASE}/delete/${encodeURIComponent(fileName)}`, {
+                    method: 'DELETE'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showMessage('文件删除成功');
+                    loadFileList();
+                } else {
+                    showMessage(result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('删除失败: ' + error.message, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+        
+        // 页面加载时获取文件列表
+        window.addEventListener('load', loadFileList);
+    </script>
+</body>
+</html>

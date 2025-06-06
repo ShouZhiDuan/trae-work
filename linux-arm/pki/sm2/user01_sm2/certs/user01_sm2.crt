@@ -1,0 +1,59 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: SM2-with-SM3
+        Issuer: C=CN, ST=Zhejiang, O=Nuowei, OU=ursa_sm2, CN=node01_sm2.nuowei.com/emailAddress=node01_sm2@nuowei.com
+        Validity
+            Not Before: Apr 23 07:25:23 2025 GMT
+            Not After : Jan 24 07:25:23 2126 GMT
+        Subject: C=CN, ST=Zhejiang, O=Nuowei, OU=ursa_sm2, CN=user01_sm2.nuowei.com/emailAddress=user01_sm2@nuowei.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:4e:d6:ac:a4:98:e2:9d:4b:2d:76:ec:55:5c:1f:
+                    e3:4a:ed:fd:57:2f:77:e4:c1:f4:23:12:87:02:a1:
+                    ed:b6:dc:d6:de:00:b2:05:39:8d:80:38:fe:38:64:
+                    d0:ee:95:5d:00:7f:1d:96:27:ec:44:43:cd:ea:8b:
+                    90:fc:b3:c6:62
+                ASN1 OID: SM2
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Client, S/MIME
+            Netscape Comment: 
+                OpenSSL Generated Client Certificate
+            X509v3 Subject Key Identifier: 
+                B4:43:AE:A0:10:CC:32:8D:AD:02:1D:F5:B5:47:C5:CC:EC:1E:0E:5C
+            X509v3 Authority Key Identifier: 
+                keyid:6A:48:25:7A:E0:F9:9B:C7:92:F0:30:72:0F:D0:23:FD:0D:EA:33:42
+
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection
+    Signature Algorithm: SM2-with-SM3
+         30:45:02:20:5e:42:d1:2a:89:f6:61:6b:cf:26:af:9d:f8:59:
+         1b:2b:00:36:51:5a:c8:1e:4d:1f:07:1e:5f:80:e4:b3:26:1f:
+         02:21:00:d4:9a:7a:98:bc:d7:27:c0:00:9c:95:cb:cc:81:7a:
+         d5:c7:21:1f:36:f2:46:fc:ec:4d:df:b7:fd:f1:ff:33:2c
+-----BEGIN CERTIFICATE-----
+MIICzTCCAnOgAwIBAgIBATAKBggqgRzPVQGDdTCBijELMAkGA1UEBhMCQ04xETAP
+BgNVBAgMCFpoZWppYW5nMQ8wDQYDVQQKDAZOdW93ZWkxETAPBgNVBAsMCHVyc2Ff
+c20yMR4wHAYDVQQDDBVub2RlMDFfc20yLm51b3dlaS5jb20xJDAiBgkqhkiG9w0B
+CQEWFW5vZGUwMV9zbTJAbnVvd2VpLmNvbTAgFw0yNTA0MjMwNzI1MjNaGA8yMTI2
+MDEyNDA3MjUyM1owgYoxCzAJBgNVBAYTAkNOMREwDwYDVQQIDAhaaGVqaWFuZzEP
+MA0GA1UECgwGTnVvd2VpMREwDwYDVQQLDAh1cnNhX3NtMjEeMBwGA1UEAwwVdXNl
+cjAxX3NtMi5udW93ZWkuY29tMSQwIgYJKoZIhvcNAQkBFhV1c2VyMDFfc20yQG51
+b3dlaS5jb20wWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAARO1qykmOKdSy127FVc
+H+NK7f1XL3fkwfQjEocCoe223NbeALIFOY2AOP44ZNDulV0Afx2WJ+xEQ83qi5D8
+s8Zio4HFMIHCMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgWgMDMGCWCGSAGG
++EIBDQQmFiRPcGVuU1NMIEdlbmVyYXRlZCBDbGllbnQgQ2VydGlmaWNhdGUwHQYD
+VR0OBBYEFLRDrqAQzDKNrQId9bVHxczsHg5cMB8GA1UdIwQYMBaAFGpIJXrg+ZvH
+kvAwcg/QI/0N6jNCMA4GA1UdDwEB/wQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcD
+AgYIKwYBBQUHAwQwCgYIKoEcz1UBg3UDSAAwRQIgXkLRKon2YWvPJq+d+FkbKwA2
+UVrIHk0fBx5fgOSzJh8CIQDUmnqYvNcnwACclcvMgXrVxyEfNvJG/OxN37f98f8z
+LA==
+-----END CERTIFICATE-----

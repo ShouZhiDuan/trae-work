@@ -1,0 +1,37 @@
+# Spring Boot应用配置
+spring:
+  application:
+    name: s3-file-service
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+
+# 服务器配置
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# AWS S3配置
+aws:
+  access:
+    key:
+      id: ${AWS_ACCESS_KEY_ID:nvx1}
+  secret:
+    access:
+      key: ${AWS_SECRET_ACCESS_KEY:nvx1}
+  region: ${AWS_REGION:us-east-1}
+  s3:
+    bucket:
+      name: ${AWS_S3_BUCKET_NAME:gongan}
+
+# 日志配置
+logging:
+  level:
+    com.example.s3: DEBUG
+    software.amazon.awssdk: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

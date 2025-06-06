@@ -1,0 +1,67 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: SM2-with-SM3
+        Issuer: C=CN, ST=Zhejiang, O=Nuowei, OU=ursa_sm2, CN=ursa_sm2.nuowei.com/emailAddress=ursa_sm2@nuowei.com
+        Validity
+            Not Before: Apr 23 07:56:47 2025 GMT
+            Not After : Jan 24 07:56:47 2126 GMT
+        Subject: C=CN, ST=Zhejiang, O=Nuowei, OU=ursa_sm2, CN=node01_sm2.nuowei.com/emailAddress=node01_sm2@nuowei.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a0:70:ae:dc:7f:2a:37:1a:a4:4b:db:72:a1:80:
+                    96:f9:47:f9:03:f6:fb:54:b6:11:8d:52:ec:a8:e8:
+                    d8:8c:9d:18:42:bc:cf:f7:60:ca:ea:db:19:11:ff:
+                    74:06:69:5a:13:83:cb:38:46:8d:ec:bb:bb:6a:1d:
+                    01:f7:1c:a8:30
+                ASN1 OID: SM2
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                OpenSSL Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                45:CC:ED:A6:94:D0:07:6F:58:C9:29:66:63:7E:A2:57:C0:51:6B:4F
+            X509v3 Authority Key Identifier: 
+                keyid:9E:D3:36:58:E6:AC:3B:E2:AE:AC:91:D4:E8:6C:BC:50:B7:A5:27:DE
+                DirName:/C=CN/ST=Zhejiang/O=Nuowei/OU=Certificate Authority/CN=ca.nuowei.com/emailAddress=ca@nuowei.com
+                serial:02
+
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Subject Alternative Name: 
+                DNS:*.baize.nuowei.com, DNS:*.scorpio.nuowei.com, DNS:*.ursa.nuowei.com
+    Signature Algorithm: SM2-with-SM3
+         30:45:02:21:00:8c:d2:4c:a3:4c:78:b0:61:87:c2:f4:5f:91:
+         a7:78:f9:77:d4:a0:b4:2e:81:ae:00:61:01:90:13:e5:b7:9a:
+         53:02:20:44:9c:cd:5d:65:3c:70:0d:d0:e1:c8:ab:c0:06:64:
+         2b:59:d2:2f:3f:8c:e4:be:1f:dd:01:5c:fb:dd:dc:47:78
+-----BEGIN CERTIFICATE-----
+MIIDnzCCA0WgAwIBAgIBATAKBggqgRzPVQGDdTCBhjELMAkGA1UEBhMCQ04xETAP
+BgNVBAgMCFpoZWppYW5nMQ8wDQYDVQQKDAZOdW93ZWkxETAPBgNVBAsMCHVyc2Ff
+c20yMRwwGgYDVQQDDBN1cnNhX3NtMi5udW93ZWkuY29tMSIwIAYJKoZIhvcNAQkB
+FhN1cnNhX3NtMkBudW93ZWkuY29tMCAXDTI1MDQyMzA3NTY0N1oYDzIxMjYwMTI0
+MDc1NjQ3WjCBijELMAkGA1UEBhMCQ04xETAPBgNVBAgMCFpoZWppYW5nMQ8wDQYD
+VQQKDAZOdW93ZWkxETAPBgNVBAsMCHVyc2Ffc20yMR4wHAYDVQQDDBVub2RlMDFf
+c20yLm51b3dlaS5jb20xJDAiBgkqhkiG9w0BCQEWFW5vZGUwMV9zbTJAbnVvd2Vp
+LmNvbTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABKBwrtx/KjcapEvbcqGAlvlH
++QP2+1S2EY1S7Kjo2IydGEK8z/dgyurbGRH/dAZpWhODyzhGjey7u2odAfccqDCj
+ggGaMIIBljAJBgNVHRMEAjAAMBEGCWCGSAGG+EIBAQQEAwIGQDAzBglghkgBhvhC
+AQ0EJhYkT3BlblNTTCBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1Ud
+DgQWBBRFzO2mlNAHb1jJKWZjfqJXwFFrTzCBtAYDVR0jBIGsMIGpgBSe0zZY5qw7
+4q6skdTobLxQt6Un3qGBjaSBijCBhzELMAkGA1UEBhMCQ04xETAPBgNVBAgMCFpo
+ZWppYW5nMQ8wDQYDVQQKDAZOdW93ZWkxHjAcBgNVBAsMFUNlcnRpZmljYXRlIEF1
+dGhvcml0eTEWMBQGA1UEAwwNY2EubnVvd2VpLmNvbTEcMBoGCSqGSIb3DQEJARYN
+Y2FAbnVvd2VpLmNvbYIBAjAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYB
+BQUHAwEwRgYDVR0RBD8wPYISKi5iYWl6ZS5udW93ZWkuY29tghQqLnNjb3JwaW8u
+bnVvd2VpLmNvbYIRKi51cnNhLm51b3dlaS5jb20wCgYIKoEcz1UBg3UDSAAwRQIh
+AIzSTKNMeLBhh8L0X5GnePl31KC0LoGuAGEBkBPlt5pTAiBEnM1dZTxwDdDhyKvA
+BmQrWdIvP4zkvh/dAVz73dxHeA==
+-----END CERTIFICATE-----

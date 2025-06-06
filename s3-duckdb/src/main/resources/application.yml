@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: s3-duckdb-query
+
+# DuckDB配置
+duckdb:
+  database-path: ":memory:"  # 使用内存数据库，也可以指定文件路径
+  
+# SeaweedFS S3配置
+seaweedfs:
+  endpoint: "http://192.168.50.28:38333"  # SeaweedFS S3网关地址
+  access-key: "nvx1"
+  secret-key: "nvx1"
+  bucket: "gongan"
+  #region: "us-east-1"
+
+# 日志配置
+logging:
+  level:
+    com.example.s3duckdb: DEBUG
+    org.duckdb: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

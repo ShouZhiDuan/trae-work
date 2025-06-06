@@ -1,0 +1,97 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: seaweedfs-config
+  namespace: default
+type: Opaque
+data:
+  # Base64编码的配置值
+  seaweedfs.enable: dHJ1ZQ==  # "true" 的base64编码
+  seaweedfs.aws.accessKey: bnZ4MQ==  # "nvx1" 的base64编码
+  seaweedfs.aws.secretKey: bnZ4MQ==  # "nvx1" 的base64编码
+  seaweedfs.aws.bucketName: Z29uZ2Fu  # "gongan" 的base64编码
+  seaweedfs.aws.endpoint: aHR0cDovLzE5Mi4xNjguNjAuNzA6MzgzMzM=  # "http://192.168.60.70:38333" 的base64编码
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cust-cont-deploy
+  namespace: default
+  labels:
+    app: cust-cont-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cust-cont-app
+  template:
+    metadata:
+      labels:
+        app: cust-cont-app
+    spec:
+      containers:
+        # kms服务 @muzhi
+        - name: baize-tally
+          image: baize_tally:20250605193120
+          ports:
+            - containerPort: 32010
+          volumeMounts:
+            - name: shared-data
+              mountPath: /tmp/shared
+          readinessProbe:
+            tcpSocket:
+              port: 32010
+            initialDelaySeconds: 5
+            periodSeconds: 2    
+        # 自定义容器 @shouzhi
+        - name: cust-cont
+          image: cust-cont:20250605184656
+          ports:
+            - containerPort: 8080
+          command: ["/bin/bash"]
+          args:
+            - "-c"
+            - |
+              echo "等待baize-tally服务启动..."
+              until response=$(curl -f -s http://localhost:32010); do
+              echo "baize-tally服务尚未就绪，等待1秒....."
+              sleep 1
+              done
+              echo "$response"
+              echo "baize-tally服务已就绪，启动主应用......"
+              exec start.sh
+          env:
+            - name: SEAWEEDFS_ENABLE
+              valueFrom:
+                secretKeyRef:
+                  name: seaweedfs-config
+                  key: seaweedfs.enable
+            - name: SEAWEEDFS_AWS_ACCESSKEY
+              valueFrom:
+                secretKeyRef:
+                  name: seaweedfs-config
+                  key: seaweedfs.aws.accessKey
+            - name: SEAWEEDFS_AWS_SECRETKEY
+              valueFrom:
+                secretKeyRef:
+                  name: seaweedfs-config
+                  key: seaweedfs.aws.secretKey
+            - name: SEAWEEDFS_AWS_BUCKETNAME
+              valueFrom:
+                secretKeyRef:
+                  name: seaweedfs-config
+                  key: seaweedfs.aws.bucketName
+            - name: SEAWEEDFS_AWS_ENDPOINT
+              valueFrom:
+                secretKeyRef:
+                  name: seaweedfs-config
+                  key: seaweedfs.aws.endpoint
+          volumeMounts:
+            - name: shared-data
+              mountPath: /tmp/shared
+
+      volumes:
+        - name: shared-data
+          emptyDir: {}

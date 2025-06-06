@@ -1,0 +1,65 @@
+# 生产环境配置
+# 该配置文件展示了生产环境中的安全SSL配置
+# 使用方式：java -jar app.jar --spring.profiles.active=prod
+
+spring:
+  profiles:
+    active: prod
+
+server:
+  port: 8080
+  # 生产环境建议启用HTTPS
+  ssl:
+    enabled: false  # 根据实际情况配置
+
+# HTTP客户端配置 - 生产环境
+http:
+  client:
+    # 连接超时时间（秒）
+    connect-timeout: 30
+    # 读取超时时间（秒）
+    read-timeout: 60
+    # 写入超时时间（秒）
+    write-timeout: 60
+    # 连接池最大空闲连接数
+    max-idle-connections: 100
+    # 连接保持活跃时间（分钟）
+    keep-alive-duration: 5
+    # 最大请求数
+    max-requests: 500
+    # 每个主机最大请求数
+    max-requests-per-host: 50
+    
+    # SSL/TLS配置 - 生产环境（严格SSL验证）
+    # 生产环境必须启用SSL验证以确保安全性
+    skip-ssl-verification: false
+    # 使用最新的TLS协议
+    ssl-protocol: TLSv1.3
+    # 生产环境必须启用主机名验证
+    enable-hostname-verification: true
+
+# 日志配置 - 生产环境
+logging:
+  level:
+    root: INFO
+    com.example.httpclient: INFO
+    # 生产环境不输出HTTP客户端的详细日志
+    okhttp3: WARN
+    reactor.netty: WARN
+  file:
+    name: logs/http-client-prod.log
+    max-size: 100MB
+    max-history: 30
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# 监控和健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized

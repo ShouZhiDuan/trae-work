@@ -1,0 +1,42 @@
+# 开发环境配置
+# 该配置文件展示了如何在开发环境中配置SSL验证绕过
+# 使用方式：java -jar app.jar --spring.profiles.active=dev
+
+spring:
+  profiles:
+    active: dev
+
+# HTTP客户端配置 - 开发环境
+http:
+  client:
+    # 连接超时时间（秒）
+    connect-timeout: 10
+    # 读取超时时间（秒）
+    read-timeout: 30
+    # 写入超时时间（秒）
+    write-timeout: 30
+    # 连接池最大空闲连接数
+    max-idle-connections: 20
+    # 连接保持活跃时间（分钟）
+    keep-alive-duration: 2
+    # 最大请求数
+    max-requests: 100
+    # 每个主机最大请求数
+    max-requests-per-host: 10
+    
+    # SSL/TLS配置 - 开发环境（跳过SSL验证）
+    # 警告：仅用于开发和测试环境，生产环境请设置为false
+    skip-ssl-verification: true
+    # SSL协议版本
+    ssl-protocol: TLS
+    # 是否启用主机名验证（开发环境可以关闭）
+    enable-hostname-verification: false
+
+# 日志配置 - 开发环境
+logging:
+  level:
+    com.example.httpclient: DEBUG
+    okhttp3: DEBUG
+    reactor.netty: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

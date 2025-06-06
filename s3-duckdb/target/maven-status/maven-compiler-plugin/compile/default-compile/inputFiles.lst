@@ -1,0 +1,9 @@
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/config/DuckDbConfig.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/service/DuckDbQueryService.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/model/QueryRequest.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/config/SeaweedFsConfig.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/model/ColumnInfo.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/model/QueryResponse.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/service/S3Service.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/S3DuckDbApplication.java
+/Users/shouzhi/temp/trae-work/s3-duckdb/src/main/java/com/example/s3duckdb/controller/QueryController.java

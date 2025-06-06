@@ -1,0 +1,370 @@
+2025-06-03 15:17:51.543 [main] INFO  c.e.httpclient.HttpClientApplication - Starting HttpClientApplication using Java 17.0.12 with PID 11131 (/Users/shouzhi/temp/trae-work/http-client/target/classes started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:17:51.545 [main] INFO  c.e.httpclient.HttpClientApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:17:52.023 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-03 15:17:52.029 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-03 15:17:52.029 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-06-03 15:17:52.061 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-03 15:17:52.061 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 494 ms
+2025-06-03 15:17:52.488 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-03 15:17:52.492 [main] INFO  c.e.httpclient.HttpClientApplication - Started HttpClientApplication in 1.166 seconds (process running for 1.33)
+2025-06-03 15:17:59.048 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03 15:17:59.049 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-03 15:17:59.053 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-06-03 15:23:34.252 [main] INFO  c.e.httpclient.HttpClientApplication - Starting HttpClientApplication using Java 17.0.12 with PID 16071 (/Users/shouzhi/temp/trae-work/http-client/target/classes started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:23:34.254 [main] INFO  c.e.httpclient.HttpClientApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:23:34.776 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-03 15:23:34.784 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-03 15:23:34.784 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-06-03 15:23:34.818 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-03 15:23:34.819 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 542 ms
+2025-06-03 15:23:35.374 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-03 15:23:35.385 [main] INFO  c.e.httpclient.HttpClientApplication - Started HttpClientApplication in 1.366 seconds (process running for 1.572)
+2025-06-03 15:27:16.538 [main] INFO  c.e.h.s.FileTransferServiceTest - Starting FileTransferServiceTest using Java 23.0.2 with PID 19436 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:27:16.538 [main] INFO  c.e.h.s.FileTransferServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:27:17.587 [main] INFO  c.e.h.s.FileTransferServiceTest - Started FileTransferServiceTest in 1.264 seconds (process running for 1.946)
+2025-06-03 15:27:18.054 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.httpclient.service.HttpClientServiceTest]: HttpClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-03 15:27:18.056 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.httpclient.HttpClientApplication for test class com.example.httpclient.service.HttpClientServiceTest
+2025-06-03 15:27:18.071 [main] INFO  c.e.h.service.HttpClientServiceTest - Starting HttpClientServiceTest using Java 23.0.2 with PID 19436 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:27:18.071 [main] INFO  c.e.h.service.HttpClientServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:27:18.240 [main] INFO  c.e.h.service.HttpClientServiceTest - Started HttpClientServiceTest in 0.182 seconds (process running for 2.6)
+2025-06-03 15:28:09.471 [main] INFO  c.e.httpclient.HttpClientApplication - Starting HttpClientApplication using Java 17.0.12 with PID 20245 (/Users/shouzhi/temp/trae-work/http-client/target/classes started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:28:09.472 [main] INFO  c.e.httpclient.HttpClientApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:28:09.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-03 15:28:09.926 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-03 15:28:09.926 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-06-03 15:28:09.960 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-03 15:28:09.961 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 468 ms
+2025-06-03 15:28:10.435 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-03 15:28:10.440 [main] INFO  c.e.httpclient.HttpClientApplication - Started HttpClientApplication in 1.182 seconds (process running for 1.338)
+2025-06-03 15:29:23.173 [main] INFO  c.e.h.s.FileTransferServiceTest - Starting FileTransferServiceTest using Java 17.0.10 with PID 21631 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:29:23.175 [main] INFO  c.e.h.s.FileTransferServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:29:24.151 [main] INFO  c.e.h.s.FileTransferServiceTest - Started FileTransferServiceTest in 1.169 seconds (process running for 1.804)
+2025-06-03 15:29:24.668 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.httpclient.service.HttpClientServiceTest]: HttpClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-03 15:29:24.670 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.httpclient.HttpClientApplication for test class com.example.httpclient.service.HttpClientServiceTest
+2025-06-03 15:29:24.702 [main] INFO  c.e.h.service.HttpClientServiceTest - Starting HttpClientServiceTest using Java 17.0.10 with PID 21631 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:29:24.702 [main] INFO  c.e.h.service.HttpClientServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:29:24.850 [main] INFO  c.e.h.service.HttpClientServiceTest - Started HttpClientServiceTest in 0.173 seconds (process running for 2.502)
+2025-06-03 15:31:29.260 [main] INFO  c.e.h.s.FileTransferServiceTest - Starting FileTransferServiceTest using Java 17.0.12 with PID 23365 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:31:29.262 [main] INFO  c.e.h.s.FileTransferServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:31:31.295 [main] INFO  c.e.h.s.FileTransferServiceTest - Started FileTransferServiceTest in 2.334 seconds (process running for 3.301)
+2025-06-03 15:31:32.043 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.httpclient.service.HttpClientServiceTest]: HttpClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-03 15:31:32.048 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.httpclient.HttpClientApplication for test class com.example.httpclient.service.HttpClientServiceTest
+2025-06-03 15:31:32.076 [main] INFO  c.e.h.service.HttpClientServiceTest - Starting HttpClientServiceTest using Java 17.0.12 with PID 23365 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:31:32.078 [main] INFO  c.e.h.service.HttpClientServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:31:32.337 [main] INFO  c.e.h.service.HttpClientServiceTest - Started HttpClientServiceTest in 0.28 seconds (process running for 4.344)
+2025-06-03 15:32:03.953 [main] INFO  c.e.h.s.FileTransferServiceTest - Starting FileTransferServiceTest using Java 17.0.12 with PID 23999 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:32:03.954 [main] INFO  c.e.h.s.FileTransferServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:32:05.886 [main] INFO  c.e.h.s.FileTransferServiceTest - Started FileTransferServiceTest in 2.296 seconds (process running for 3.238)
+2025-06-03 15:32:07.200 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.200 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.201 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.201 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 516 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.223 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.223 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.223 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.223 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 328 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.267 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.268 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.268 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.268 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.268 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 316 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.271 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.272 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.272 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.272 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 406 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.289 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.290 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.291 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.291 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.292 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 607 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.397 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.397 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.397 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.397 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 253 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.424 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.425 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.430 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 already scheduled     : OkHttp ConnectionPool
+2025-06-03 15:32:07.435 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.436 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.436 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 748 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.477 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.478 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.479 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.479 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.479 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 383 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.489 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.489 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.490 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.491 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in   1 ms: OkHttp ConnectionPool
+2025-06-03 15:32:07.550 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.550 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.550 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.551 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.551 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 347 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.554 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.555 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.555 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.556 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 648 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.654 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.655 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.655 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.655 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.655 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 158 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.765 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.765 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.765 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.765 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 209 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.787 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.788 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.791 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 already scheduled     : OkHttp ConnectionPool
+2025-06-03 15:32:07.792 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.792 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.792 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 243 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.809 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.810 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.810 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.810 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.810 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 111 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.811 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.811 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.811 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.811 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in  79 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.842 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:07.843 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.843 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.843 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.843 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 125 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.845 [main] DEBUG o.internal.concurrent.TaskRunner - Q10000 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.845 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:07.845 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10000 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:07.845 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10000 finished run in 338 µs: OkHttp ConnectionPool
+2025-06-03 15:32:07.854 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.httpclient.service.HttpClientServiceTest]: HttpClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-03 15:32:07.857 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.httpclient.HttpClientApplication for test class com.example.httpclient.service.HttpClientServiceTest
+2025-06-03 15:32:07.884 [main] INFO  c.e.h.service.HttpClientServiceTest - Starting HttpClientServiceTest using Java 17.0.12 with PID 23999 (started by shouzhi in /Users/shouzhi/temp/trae-work/http-client)
+2025-06-03 15:32:07.885 [main] INFO  c.e.h.service.HttpClientServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-03 15:32:08.076 [main] INFO  c.e.h.service.HttpClientServiceTest - Started HttpClientServiceTest in 0.212 seconds (process running for 5.428)
+2025-06-03 15:32:08.092 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:08.092 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:08.093 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:08.093 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 303 µs: OkHttp ConnectionPool
+2025-06-03 15:32:08.104 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:08.104 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:08.104 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:08.104 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 215 µs: OkHttp ConnectionPool
+2025-06-03 15:32:08.138 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:08.139 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:08.139 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:08.139 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:08.139 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 157 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.142 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.143 [main] ERROR c.e.h.service.HttpClientService - HTTP请求执行失败: timeout
+java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:146)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:161)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:339)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:430)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:323)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:180)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:110)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.example.httpclient.service.HttpClientService.execute(HttpClientService.java:61)
+	at com.example.httpclient.service.HttpClientServiceTest.testTimeout(HttpClientServiceTest.java:246)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	Suppressed: java.io.IOException: unexpected end of stream on http://localhost:8089/...
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:210)
+		... 86 common frames omitted
+	Caused by: java.io.EOFException: \n not found: limit=0 content=…
+		at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:335)
+		at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:180)
+		... 86 common frames omitted
+Caused by: java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at okio.InputStreamSource.read(JvmOkio.kt:93)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:128)
+	... 90 common frames omitted
+2025-06-03 15:32:10.666 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.666 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.666 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.666 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 205 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.669 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.669 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.670 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.670 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 203 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.684 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.685 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.685 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.685 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.685 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 164 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.788 [ForkJoinPool.commonPool-worker-1] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.789 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.789 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.789 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 216 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.803 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.803 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.804 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.804 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.804 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 387 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.806 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.806 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.806 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.806 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 143 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.821 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.822 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.822 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.822 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.822 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 240 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.824 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.825 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.825 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.825 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 184 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.843 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.844 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.844 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.844 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.844 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 327 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.857 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.857 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.857 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.857 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 173 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.858 [main] WARN  c.e.h.service.HttpClientService - 响应体JSON解析失败，返回原始字符串: Unrecognized token 'Request': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+--------------------------------------------------------------------------------------------------------------------"[truncated 643 chars]; line: 2, column: 55]
+2025-06-03 15:32:10.883 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.884 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.884 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.884 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.884 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 251 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.886 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.886 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.887 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.887 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 414 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.887 [main] WARN  c.e.h.service.HttpClientService - 响应体JSON解析失败，返回原始字符串: Unrecognized token 'Request': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+--------------------------------------------------------------------------------------------------------------------"[truncated 642 chars]; line: 2, column: 55]
+2025-06-03 15:32:10.905 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.905 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.906 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.906 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.906 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 353 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.908 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.909 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.909 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.909 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 263 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.916 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.916 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.917 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.917 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 206 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.923 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.923 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.923 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.923 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 159 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.928 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.929 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.929 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.929 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 204 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.945 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 canceled              : OkHttp ConnectionPool
+2025-06-03 15:32:10.946 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.946 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.946 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.946 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 388 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.948 [main] DEBUG o.internal.concurrent.TaskRunner - Q10007 scheduled after   0 µs: OkHttp ConnectionPool
+2025-06-03 15:32:10.949 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 starting              : OkHttp ConnectionPool
+2025-06-03 15:32:10.949 [OkHttp ConnectionPool] DEBUG o.internal.concurrent.TaskRunner - Q10007 run again after 300 s : OkHttp ConnectionPool
+2025-06-03 15:32:10.949 [OkHttp TaskRunner] DEBUG o.internal.concurrent.TaskRunner - Q10007 finished run in 196 µs: OkHttp ConnectionPool

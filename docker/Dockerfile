@@ -1,0 +1,9 @@
+FROM 192.168.50.32/baize/debian:bookworm-20250520-aarch64
+
+ADD opt/config.yaml /opt/military/
+ADD opt/pki.tar.gz /opt/military/
+ADD opt/military-linux-arm64 /opt/military/military
+ADD opt/docker-entrypoint.sh /
+RUN chmod +x /opt/military/military /docker-entrypoint.sh
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

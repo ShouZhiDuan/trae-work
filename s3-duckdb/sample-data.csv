@@ -1,0 +1,11 @@
+id,name,age,email,city,salary
+1,张三,25,zhangsan@example.com,北京,8000
+2,李四,30,lisi@example.com,上海,12000
+3,王五,28,wangwu@example.com,广州,9500
+4,赵六,35,zhaoliu@example.com,深圳,15000
+5,钱七,22,qianqi@example.com,杭州,7000
+6,孙八,29,sunba@example.com,成都,8500
+7,周九,33,zhoujiu@example.com,武汉,11000
+8,吴十,27,wushi@example.com,西安,8800
+9,郑一,31,zhengyi@example.com,南京,10500
+10,王二,26,wanger@example.com,天津,9000

@@ -1,0 +1,58 @@
+{
+  "jdbcConf": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "pass": "password",
+    "dbName": "test_database"
+  },
+  "ftpConf": {
+    "host": "ftp.example.com",
+    "port": 21,
+    "user": "ftpuser",
+    "pass": "ftppassword"
+  },
+  "queryFilePath": "/data/storage/request/12345/query.csv",
+  "queryIdName": "idexName",
+  "queryInfo": {
+    "ga": {
+      "task": {
+        "id": 123,
+        "name": "公安查询任务",
+        "modelName": "风险评估模型",
+        "user": "张警官",
+        "nodeName": "某某医院"
+      },
+      "runList": [
+        {
+          "tbName": "patient_records",
+          "idName": "patient_id",
+          "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+          "responseFilePath": "/data/storage/query/ga_result.csv"
+        },
+        {
+          "tbName": "medical_history",
+          "idName": "record_id",
+          "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+          "responseFilePath": "/data/storage/query/ga_medical_result.csv"
+        }
+      ]
+    },
+    "yy": {
+      "runList": [
+        {
+          "tbName": "hospital_patients",
+          "idName": "patient_id",
+          "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+          "responseFilePath": "/data/storage/query/result/100/hospital_result.csv"
+        },
+        {
+          "tbName": "treatment_records",
+          "idName": "treatment_id",
+          "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+          "responseFilePath": "/data/storage/query/result/100/treatment_result.csv"
+        }
+      ]
+    }
+  }
+}

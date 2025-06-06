@@ -1,0 +1,33 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: SM2-with-SM3
+        Issuer: C = CN, ST = Zhejiang, O = Nuowei, OU = ursa_sm2, CN = node01_sm2.nuowei.com, emailAddress = node01_sm2@nuowei.com
+        Validity
+            Not Before: Apr 29 08:17:50 2025 GMT
+            Not After : Apr  5 08:17:50 2125 GMT
+        Subject: C = CN, ST = Zhejiang, L = Hangzhou, O = Nuowei, OU = Ursa, CN = admin.nuowei.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:af:fe:8c:02:86:90:96:73:ed:fd:73:f7:f3:a0:
+                    d9:e8:01:70:52:c8:af:59:c4:92:67:1c:5e:06:49:
+                    dd:3d:c6:fa:ca:e7:74:bb:60:e2:f5:2c:91:4a:7d:
+                    9b:b7:33:8a:79:68:5c:c2:37:86:f0:f8:65:f3:fb:
+                    f4:16:70:8b:06
+                ASN1 OID: SM2
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Authority Key Identifier: 
+                45:CC:ED:A6:94:D0:07:6F:58:C9:29:66:63:7E:A2:57:C0:51:6B:4F
+    Signature Algorithm: SM2-with-SM3
+    Signature Value:
+        30:44:02:20:68:7b:b0:3a:cf:62:01:7e:73:cb:42:cc:f2:d3:
+        f9:a6:84:7b:9f:c6:2a:58:16:fa:bd:af:4b:29:72:ca:47:fb:
+        02:20:74:56:c1:9c:91:ee:e1:2d:ea:7f:3a:5b:9b:5e:c6:35:
+        49:f2:07:b7:2a:ee:7c:0c:f4:6e:cd:69:b6:06:08:98
